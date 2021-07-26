@@ -25,7 +25,7 @@
           />
         </a-form-item>
         <a-form-item label="Начальник">
-          <a-select v-decorator="rules.chief">
+          <a-select v-decorator="rules.chief" :allow-clear="true">
             <template v-for="{id, name} in users">
               <a-select-option v-key="id" :value="id">
                 {{ name }}
